@@ -1,0 +1,137 @@
+/*
+Para resetear los estilos por defecto que da el navegador:
+ */
+
+body{
+        font-family: 'Roboto';
+}
+
+body, html{
+        margin: 0;
+        padding: 0;
+}
+
+/*Enlaces vistados, activos y mouse encima*/
+a, a:visited, a:active, a:hover{
+        text-decoration: none;
+        color:white;
+}
+
+/*Quitar viñetas*/
+ul li{
+   list-style: none;
+}
+
+/*Estilos para la clase portada-principal*/
+
+.portada-principal{
+        height: 100vh; /*vh = vievport height*/
+        background-image: url("../img/edificio-principal.jpg");
+}
+
+.logo{
+        padding: 10px;
+}
+
+.logo span{
+        color:white;
+}
+
+
+/*Estilo para el menu principal*/
+.menu-principal{
+        background-color: rgba(0,0,0,.4 );
+        overflow: auto; /*para que contenga los elementos flotantes y ponga el background*/
+        padding: 15px 15%;
+}
+
+.menu-principal .menu{
+
+}
+
+.texto-portada{
+        padding: 15px 15%;
+        margin: 90px 0%;
+}
+
+.texto-portada h1 span{
+        font-size: 75px;
+        font-family: 'Roboto-Light';
+}
+
+.texto-sombra{
+        text-shadow: 1px 1px 1px blue; /*para dar sombra */
+}
+
+
+
+/*Hace que los elementos del menu esten uno a la par de otro*/
+.menu-principal .menu li{
+        display: inline-block;
+}
+
+.menu-principal .menu li a{
+        padding: 5px 50px;
+}
+
+a.boton{
+        border: 2px solid white;
+        padding: 10px;
+        text-shadow: none;
+        margin-top: 30px;
+}
+
+a.boton:hover{
+        background-color:  rgba(255,255,255,.3);
+}
+
+.inicio-descripcion{ /*Como lleva elemento flotante se le agrega el overflow:auto*/
+        overflow: auto;
+        margin: -65px 15% 20px ;
+        background-color: white;
+        min-height: 30px;
+        box-shadow: 0 1px 1px 3px #e1e1e1; /*para simular un borde*/
+}
+
+.inicio-descripcion article{
+        width: 22%;
+        display: inline-block; /*para poner cada articulo uno a la par del otro*/
+}
+
+.inicio-descripcion article figure{
+        margin: 0;
+}
+
+/*El nombre de la clase es o debe ser referente a lo q hace, en este caso:
+mt = margin top
+1 = escala del margen
+2 = escala en ascendencia*/
+.mt-1{
+        margin-top: 1rem;
+}
+
+.mt-2{
+        margin-top: 5.2rem;
+}
+
+/*Clases de utilidad general*/
+
+.letra-m{
+        font-size: 25px;
+}
+
+.blanco{
+        color: #fff;
+}
+
+.naranja{
+        color: #F79733;
+}
+
+.izq{
+        float: left;
+}
+
+.der{
+        float: right;
+}
